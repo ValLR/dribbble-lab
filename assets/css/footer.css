@@ -1,0 +1,31 @@
+footer{
+	padding: 40px;
+	font-family: 'Arimo', sans-serif;
+	color: #A8A7A7;
+}
+.icons{
+	font-size: 2em;
+	padding: 3px;
+}
+.copyright{
+	padding-top: 10px;
+}
+ul li{
+	list-style: none;
+	cursor: pointer;
+	position: relative;
+	right: 50px;
+}
+.column{
+	position: relative;
+	left: 20px;
+	bottom: 7px;
+}
+.letter-blue{
+	color: #5D52EF;
+}
+.img-footer{
+	position: relative;
+	left: 5px;
+	top: 8px;
+}
