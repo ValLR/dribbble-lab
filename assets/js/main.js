@@ -17,7 +17,7 @@ $(document).ready(function(){
 	}
 
 		var armarTemplate = function(img,visitas,contadorComentarios,like,titlePro,description,fecha){
-			var printed=` <div class= "col-md-4">
+			var printed=` <div class= "col-md-4 caja">
 						<div class = "row">
 							<div class = col-md-12>
 								<div class = "hover hidden">
