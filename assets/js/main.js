@@ -15,12 +15,10 @@ $(document).ready(function(){
 			var id = element.id;
 			var id2 = element.id + img;
 			//ID desde index.html "proyecto"
-<<<<<<< HEAD
-			$("#proyectos").append(armarTemplate(img,visitas,contadorComentarios,like,titlePro,description,fecha,id,id2));
-=======
 
-			$("#proyectos").append(armarTemplate(img,visitas,contadorComentarios,like,titlePro,description,fecha));
->>>>>>> 2ca6d9cfdb5d4818f3a3bbdb57061764f31ddf3e
+			$("#proyectos").append(armarTemplate(img,visitas,contadorComentarios,like,titlePro,description,fecha,id,id2));
+
+
 		});
 		$(".img-lin").hover(function(){
 			$("#hover").removeClass("hidden");
