@@ -4,7 +4,7 @@ footer{
 	color: #A8A7A7;
 }
 .row1{
-	margin-left: 30px;
+	margin-left: 5px;
 }
 .icons{
 	font-size: 2em;
@@ -39,6 +39,7 @@ ul li{
 }
 .text-flow{
 	margin-left: 30px;
+	margin-top: 20px;
 }
 .numbers{
 	color: black;
