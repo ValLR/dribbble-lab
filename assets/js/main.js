@@ -27,27 +27,27 @@ $(document).ready(function(){
 	}
 	/*Función para imprimir contenido dinámico en página*/
 		var armarTemplate = function(img,visitas,contadorComentarios,like,titlePro,description,fecha,id,id2){
-			var printed=` <div class= "col-md-4">
-						<div class = "row">
-							<div class = "col-md-12 caja">
-								<div id = "`+ id +`" class = "hidden">
-									<div class="row">
+			var printed=` <div class= "caja-white text-center">
+						<div class = "row ">
+							<div class = "col-md-12">
+								<div id="`+id+`" class="hidden">
+									<div>
 										<h4>`+titlePro+`</h4>
 									</div>
-									<div class ="row">
+									<div>
 										<p>`+ description +`</p>
 									</div>
-									<div class = "row">
+									<div>
 										<p>`+fecha+`</p>
 									</div>
 								</div>
-								<a class= img-link>
-									<img id="`+ id2 +`" src="`+ img +`">
-								</a>
+									<a class= img-link>
+										<img id="`+id2+`" src="`+ img +`">
+									</a>
 							</div>
-						</div>
-						<div class = "row">
-							<div class = "col-md-3 col-md-offset-3">
+						</div>	
+						<div class = "row visitas">
+							<div class = "col-md-3 col-md-offset-2">
 								<i class="fa fa-eye" aria-hidden="true">`+ visitas +`</i>
 							</div>
 							<div class = "col-md-3">
@@ -58,7 +58,6 @@ $(document).ready(function(){
 							</div>
 						</div>
 					</div>
-
 				`
 			return printed;
     }
