@@ -37,7 +37,7 @@ $(document).ready(function(){
 							</div>
 						</div>
 						<div class = "row">
-							<div class = col-md-3>
+							<div class = "col-md-3 col-md-offset-3">
 								<i class="fa fa-eye" aria-hidden="true">`+ visitas +`</i>
 							</div>
 							<div class = "col-md-3">
