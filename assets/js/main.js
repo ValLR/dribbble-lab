@@ -12,14 +12,25 @@ $(document).ready(function(){
 			var description = element.description;
 			var fecha = element.updated_at;
 			//ID desde index.html "proyecto"
-			$("#proyectos").append(/*functionEjm(img,visitas,contadorComentarios,like,titlePro,description,fecha)*/);
+			$("#proyectos").append(armarTemplate(img,visitas,contadorComentarios,like,titlePro,description,fecha));
 		});
 	}
 
-		var armarTemplate = function(img,visitas,contadorComentarios){
+		var armarTemplate = function(img,visitas,contadorComentarios,like,titlePro,description,fecha){
 			var printed=` <div class= "col-md-4">
 						<div class = "row">
 							<div class = col-md-12>
+								<div class = "hover hidden">
+									<div class="row">
+										<h4>`+titlePro+`</h4>
+									</div>
+									<div class ="row">
+										<p>`+ description +`</p>
+									</div>
+									<div class = "row">
+										<p>`+fecha+`</p>
+									</div>
+								</div>
 								<a class= img-link>
 									<img src="`+ img +`">
 								</a>
@@ -33,10 +44,11 @@ $(document).ready(function(){
 								<i class="fa fa-comment" aria-hidden="true">`+contadorComentarios+`</i>
 							</div>
 							<div class="col-md-3">
-								
+								<i class="fa fa-heart" aria-hidden="true">`+like+`</i>
 							</div>
 						</div>
 					</div>
+
 				`
 			return printed;
 		}
@@ -56,5 +68,9 @@ $(document).ready(function(){
 			console.log("error");
 		})
 	}
-
+	/*Para que al cargarse la página, se muestre el contenido*/
+	$(window).load(function() {
+        $("#proyectos").empty();
+        ajaxDribbble();
+    });
 });	
