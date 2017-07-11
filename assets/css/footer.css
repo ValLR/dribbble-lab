@@ -3,6 +3,9 @@ footer{
 	font-family: 'Arimo', sans-serif;
 	color: #A8A7A7;
 }
+.row1{
+	margin-left: 30px;
+}
 .icons{
 	font-size: 2em;
 	padding: 3px;
@@ -28,4 +31,18 @@ ul li{
 	position: relative;
 	left: 5px;
 	top: 8px;
+}
+.img-footer2{
+	position: relative;
+	left: 5px;
+	top: 70px;
+}
+.text-flow{
+	margin-left: 30px;
+}
+.numbers{
+	color: black;
+}
+.div-numbers{
+	margin-top: 50px;
 }
