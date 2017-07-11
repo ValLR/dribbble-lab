@@ -16,9 +16,30 @@ $(document).ready(function(){
 		});
 	}
 
-	/*
-	Vale has lo tuyo aquí 
-	*/
+		var armarTemplate = function(img,visitas,contadorComentarios){
+			var printed=` <div class= "col-md-4">
+						<div class = "row">
+							<div class = col-md-12>
+								<a class= img-link>
+									<img src="`+ img +`">
+								</a>
+							</div>
+						</div>
+						<div class = "row">
+							<div class = col-md-3>
+								<i class="fa fa-eye" aria-hidden="true">`+ visitas +`</i>
+							</div>
+							<div class = "col-md-3">
+								<i class="fa fa-comment" aria-hidden="true">`+contadorComentarios+`</i>
+							</div>
+							<div class="col-md-3">
+								
+							</div>
+						</div>
+					</div>
+				`
+			return printed;
+		}
 
 	/* Llamada de API */
 	var ajaxDribbble = function(d){
