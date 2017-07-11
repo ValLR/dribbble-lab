@@ -1,6 +1,7 @@
 $(document).ready(function(){
 	/* Recorrido Json Api */
 	var infoDribbble = function(data){
+		console.log("hola");
 		data.forEach(function(element){
 			/* Mostrar en HTMO :*/
 			var img = element.images.teaser;
@@ -14,7 +15,12 @@ $(document).ready(function(){
 			var id = element.id;
 			var id2 = element.id + img;
 			//ID desde index.html "proyecto"
+<<<<<<< HEAD
 			$("#proyectos").append(armarTemplate(img,visitas,contadorComentarios,like,titlePro,description,fecha,id,id2));
+=======
+
+			$("#proyectos").append(armarTemplate(img,visitas,contadorComentarios,like,titlePro,description,fecha));
+>>>>>>> 2ca6d9cfdb5d4818f3a3bbdb57061764f31ddf3e
 		});
 		$(".img-lin").hover(function(){
 			$("#hover").removeClass("hidden");
@@ -57,15 +63,16 @@ $(document).ready(function(){
 
 				`
 			return printed;
-		}
+    }
+
 
 
 	/* Llamada de API */
-	var ajaxDribbble = function(d){
+	var ajaxDribbble = function(){
 		$.ajax({
 			url: 'https://api.dribbble.com/v1/users/megdraws/shots?access_token=fbbeb10dd624557fb23eb469706d163bfa435ba315154651642e2f7706a58760',
 			type: 'GET',
-			datatype: 'json',
+			datatype: 'jsonp'
 		})
 		.done(function(response){
 			console.log(response);
@@ -75,9 +82,13 @@ $(document).ready(function(){
 			console.log("error");
 		})
 	}
-	/*Para que al cargarse la página, se muestre el contenido*/
+
+
+	/*Cuando carge la pagina debe aparecer los poryectos*/
 	$(window).load(function() {
-        $("#proyectos").empty();
-        ajaxDribbble();
-    });
+		$("#proyectos").empty();
+		ajaxDribbble();
+	});
+
+
 });	
