@@ -11,16 +11,22 @@ $(document).ready(function(){
 			var titlePro = element.title;
 			var description = element.description;
 			var fecha = element.updated_at;
+			var id = element.id;
+			var id2 = element.id + img;
 			//ID desde index.html "proyecto"
-			$("#proyectos").append(armarTemplate(img,visitas,contadorComentarios,like,titlePro,description,fecha));
+			$("#proyectos").append(armarTemplate(img,visitas,contadorComentarios,like,titlePro,description,fecha,id,id2));
 		});
+		$(".img-lin").hover(function(){
+			$("#hover").removeClass("hidden");
+			$("#project-img").addClass("hidden");
+		})
 	}
-
-		var armarTemplate = function(img,visitas,contadorComentarios,like,titlePro,description,fecha){
-			var printed=` <div class= "col-md-4 caja">
+	/*Función para imprimir contenido dinámico en página*/
+		var armarTemplate = function(img,visitas,contadorComentarios,like,titlePro,description,fecha,id,id2){
+			var printed=` <div class= "col-md-4">
 						<div class = "row">
-							<div class = col-md-12>
-								<div class = "hover hidden">
+							<div class = "col-md-12 caja">
+								<div id = "`+ id +`" class = "hidden">
 									<div class="row">
 										<h4>`+titlePro+`</h4>
 									</div>
@@ -32,7 +38,7 @@ $(document).ready(function(){
 									</div>
 								</div>
 								<a class= img-link>
-									<img src="`+ img +`">
+									<img id="`+ id2 +`" src="`+ img +`">
 								</a>
 							</div>
 						</div>
@@ -52,6 +58,7 @@ $(document).ready(function(){
 				`
 			return printed;
 		}
+
 
 	/* Llamada de API */
 	var ajaxDribbble = function(d){

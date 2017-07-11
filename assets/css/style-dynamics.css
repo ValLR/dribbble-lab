@@ -5,3 +5,6 @@
 .caja{
 	padding: 5px;
 }
+a:hover{
+	cursor:pointer;
+}
