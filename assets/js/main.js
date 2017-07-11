@@ -18,12 +18,9 @@ $(document).ready(function(){
 
 			$("#proyectos").append(armarTemplate(img,visitas,contadorComentarios,like,titlePro,description,fecha,id,id2));
 
-
 		});
-		$(".img-lin").hover(function(){
-			$("#hover").removeClass("hidden");
-			$("#project-img").addClass("hidden");
-		})
+
+
 	}
 	/*Función para imprimir contenido dinámico en página*/
 		var armarTemplate = function(img,visitas,contadorComentarios,like,titlePro,description,fecha,id,id2){
@@ -62,7 +59,12 @@ $(document).ready(function(){
 			return printed;
     }
 
-
+    	function ocultar(id,id2){
+				$(id).hover(function(){
+				$(id).removeClass("hidden");
+				$(id2).addClass("hidden");
+			})
+		}
 
 	/* Llamada de API */
 	var ajaxDribbble = function(){
