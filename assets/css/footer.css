@@ -7,8 +7,10 @@ footer{
 	margin-left: 5px;
 }
 .icons{
+	position: relative;
+	right: 20px;
 	font-size: 2em;
-	padding: 3px;
+	padding-top: 10px;
 }
 .copyright{
 	padding-top: 10px;
@@ -22,10 +24,13 @@ ul li{
 .column{
 	position: relative;
 	left: 20px;
-	bottom: 7px;
+	bottom: 8px;
 }
 .letter-blue{
 	color: #5D52EF;
+}
+.column-right{
+	margin-left: 30px;
 }
 .img-footer{
 	position: relative;
@@ -39,7 +44,6 @@ ul li{
 }
 .text-flow{
 	margin-left: 30px;
-	margin-top: 20px;
 }
 .numbers{
 	color: black;

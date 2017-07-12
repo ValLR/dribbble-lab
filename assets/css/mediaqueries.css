@@ -1,0 +1,27 @@
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (tablets, 768px and up) */
+@media(min-width:576px) {
+	.column{
+		left: -100px;
+		bottom: 0;
+	}	
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media(min-width:768px) { 
+	.column{
+		left: -100px;
+		bottom: 0;
+	}
+ }
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+	.column{
+		position: relative;
+		left: 20px;
+		bottom: 8px;
+	}
+}
