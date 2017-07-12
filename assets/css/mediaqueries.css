@@ -1,27 +1,75 @@
-/* Extra small devices (phones, less than 768px) */
-/* No media query since this is the default in Bootstrap */
-
-/* Small devices (tablets, 768px and up) */
-@media(min-width:576px) {
+/* Small devices (mobiles, 767px and up) */
+@media(max-width:767px) {
 	.column{
-		left: -100px;
+		left: -10px;
 		bottom: 0;
-	}	
+	}
+	.column-right{
+		left: -50px;
+	}
+	.text-flow{
+		margin-left: 20px;
+		margin-top: 10px;
+	}
+	.pixels{
+		position: relative;
+		bottom: 50px;
+		left: 10px;
+	}
+	.icons2{
+		left: -5px;
+		font-size: 1.8em;
+		padding-top: 10px;
+		padding-right: 10px;
+		bottom: 50px;
+	}
 }
 
-/* Medium devices (desktops, 992px and up) */
+/* Medium devices (tablets, 768px and up) */
 @media(min-width:768px) { 
 	.column{
-		left: -100px;
+		left: -10px;
 		bottom: 0;
+	}
+	.column-right{
+		left: -50px;
+	}
+	.text-flow{
+		margin-left: 20px;
+		margin-top: 10px;
+	}
+	.pixels{
+		position: relative;
+		bottom: 50px;
+		left: 10px;
+	}
+	.icons2{
+		left: -5px;
+		font-size: 1.8em;
+		padding-top: 10px;
+		padding-right: 10px;
+		bottom: 50px;
 	}
  }
 
-/* Medium Devices, Desktops */
+ /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
 	.column{
 		position: relative;
 		left: 20px;
 		bottom: 8px;
+	}
+	.text-flow{
+		margin-left: 30px;
+		margin-top: 0;
+	}
+	.pixels{
+		top: 0;
+	}
+	.icons{
+		position: relative;
+		right: 20px;
+		font-size: 2em;
+		padding-top: 10px;
 	}
 }
