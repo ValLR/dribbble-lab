@@ -18,15 +18,19 @@
 	}
 	.icons2{
 		left: -5px;
-		font-size: 1.6em;
+		font-size: 1.5em;
 		padding-top: 10px;
 		padding-right: 10px;
 		bottom: 50px;
 	}
-	.responsive-copyright{
+	.copyright-responsive{
 		position: relative;
 		left: 10px;
-		bottom: 20px;
+		bottom: 35px;
+	}
+	.list-responsive{
+		margin-top: 15px;
+		padding-bottom: 10px;
 	}
 }
 
@@ -50,15 +54,19 @@
 	}
 	.icons2{
 		left: -5px;
-		font-size: 1.6em;
+		font-size: 1.5em;
 		padding-top: 10px;
 		padding-right: 10px;
 		bottom: 50px;
 	}
-	.responsive-copyright{
+	.copyright-responsive{
 		position: relative;
 		left: 10px;
-		bottom: 20px;
+		bottom: 35px;
+	}
+	.list-responsive{
+		margin-top: 15px;
+		padding-bottom: 10px;
 	}
  }
 
@@ -81,5 +89,9 @@
 		right: 20px;
 		font-size: 2em;
 		padding-top: 10px;
+	}
+	.list-responsive{
+		margin-top: 0;
+		padding-bottom: 0;
 	}
 }
