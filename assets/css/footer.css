@@ -1,7 +1,7 @@
 footer{
 	padding: 40px;
 	font-family: 'Arimo', sans-serif;
-	color: #A8A7A7;
+	color: #848484;
 }
 .row1{
 	margin-left: 5px;
@@ -27,6 +27,8 @@ ul li{
 	bottom: 8px;
 }
 .letter-blue{
+	position: relative;
+	top: 10px;
 	color: #5D52EF;
 }
 .column-right{
@@ -35,17 +37,19 @@ ul li{
 .img-footer{
 	position: relative;
 	left: 5px;
-	top: 8px;
+	top: 20px;
 }
 .img-footer2{
 	position: relative;
 	left: 5px;
-	top: 70px;
+	top: 75px;
 }
 .text-flow{
 	margin-left: 30px;
 }
 .numbers{
+	position: relative;
+	top: 10px;
 	color: black;
 }
 .div-numbers{

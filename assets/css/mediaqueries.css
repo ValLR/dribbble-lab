@@ -18,10 +18,15 @@
 	}
 	.icons2{
 		left: -5px;
-		font-size: 1.8em;
+		font-size: 1.6em;
 		padding-top: 10px;
 		padding-right: 10px;
 		bottom: 50px;
+	}
+	.responsive-copyright{
+		position: relative;
+		left: 10px;
+		bottom: 20px;
 	}
 }
 
@@ -45,10 +50,15 @@
 	}
 	.icons2{
 		left: -5px;
-		font-size: 1.8em;
+		font-size: 1.6em;
 		padding-top: 10px;
 		padding-right: 10px;
 		bottom: 50px;
+	}
+	.responsive-copyright{
+		position: relative;
+		left: 10px;
+		bottom: 20px;
 	}
  }
 
